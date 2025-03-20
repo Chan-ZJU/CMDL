@@ -18,7 +18,7 @@ def fetch_unique_tableids(fp):
 if __name__ == "__main__":
   datalake = 'mlopen' 
   text_path = 'inputs/mlopen-text' 
-  table_path = 'inputs/mlopen-tables'
+  table_path = 'inputs/mlopen_t2t_LS_dataset'
   table_sep = ',' 
   wem_model_path = 'resources/fasttext/cc/cc.en.300.bin'
   wem_dim = 300
