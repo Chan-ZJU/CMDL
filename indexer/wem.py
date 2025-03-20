@@ -17,7 +17,7 @@ class WEM():
   def __call__(self, word_list):
     assert self.ft_model is not None
     assert word_list is not None
-    vectors = [self.ft_model.wv[w] for w in word_list]
+    vectors = [self.ft_model.get_word_vector(w) for w in word_list]
     return np.nanmean(vectors, axis=0)
 
   def get_vector(self, word_list):
