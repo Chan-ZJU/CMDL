@@ -1,6 +1,7 @@
 from annoy import AnnoyIndex
 from gensim.models.fasttext import FastText #load_facebook_vectors
 from gensim.models.keyedvectors import FastTextKeyedVectors
+import fasttext
 import numpy as np
 import os, re
 import csv
@@ -9,7 +10,8 @@ from tqdm import tqdm
 class WEM():
   def __init__(self, ft_model_path, dim):
     tqdm.write(f'Loading wem model from file {ft_model_path}')
-    self.ft_model = FastTextKeyedVectors.load(ft_model_path, mmap='r') #load_facebook_vectors(ft_model_path)
+    # self.ft_model = FastTextKeyedVectors.load(ft_model_path, mmap='r') #load_facebook_vectors(ft_model_path)
+    self.ft_model = fasttext.load_model(ft_model_path)
     self.dim = dim
 
   def __call__(self, word_list):

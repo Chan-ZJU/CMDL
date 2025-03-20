@@ -21,4 +21,5 @@ dependencies:
     - regex==2021.4.4
     - spacy==3.0.6
     - tqdm==4.49.0
+    - fasttext
     - notebook
