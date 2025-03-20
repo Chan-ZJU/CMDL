@@ -18,7 +18,7 @@ def fetch_unique_tableids(fp):
 if __name__ == "__main__":
   datalake = 'mlopen' 
   text_path = 'inputs/mlopen-text' 
-  table_path = 'inputs/mlopen_t2t_LS_dataset'
+  table_path = 'inputs/mlopen_t2t_SS_dataset'
   table_sep = ',' 
   wem_model_path = 'resources/fasttext/cc/cc.en.300.bin'
   wem_dim = 300
@@ -76,6 +76,7 @@ if __name__ == "__main__":
 
   ## write results to label files
   column_labels_dir = 'column_labels'
+  os.mkdir(column_labels_dir)
   tblname_file = os.path.join(column_labels_dir, datalake + '-tblname.lbl')
   colname_file = os.path.join(column_labels_dir, datalake + '-colname.lbl')
   content_file = os.path.join(column_labels_dir, datalake + '-content.lbl')
