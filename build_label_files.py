@@ -4,6 +4,7 @@ from indexer.table_indexer import table_indexer
 from tqdm import tqdm
 import numpy as np
 import csv
+import os
 
 def fetch_unique_tableids(fp):
   if fp is None: return None
