@@ -33,4 +33,13 @@ pip install notebook
 jupyter nbconvert --to script [filename].ipynb
 python [filename].py
 
+## run python file
+python build_label_files.py
+python build_features.py
+
+## run python file
+cd labeler
+jupyter nbconvert --to script snorkel_labeler.ipynb
+python snorkel_labeler.py
+
 ## build up snorkel environment

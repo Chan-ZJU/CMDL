@@ -23,3 +23,6 @@ dependencies:
     - tqdm==4.49.0
     - fasttext
     - notebook
+    - datasets
+    - transformers
+    - pillow==9.0.0
