@@ -14,7 +14,7 @@ def write_csv(fp, rows):
 if __name__ == "__main__":
   datalake = 'mlopen' 
   text_path = 'inputs/mlopen-text' 
-  table_path = 'inputs/mlopen-tables' 
+  table_path = 'inputs/mlopen_t2t_SS_dataset' 
   table_sep = ',' 
   wem_model_path = 'resources/fasttext/cc/cc.en.300.bin'
   wem_dim = 300

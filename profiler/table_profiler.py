@@ -129,7 +129,7 @@ class table_profiler(object):
 
 if __name__ == "__main__":
   p = table_profiler(None)
-  for id, tbl, col, is_string, data, card in p.process_dir('../inputs/mlopen-tables', ','):
+  for id, tbl, col, is_string, data, card in p.process_dir('../inputs/mlopen_t2t_SS_dataset', ','):
     print(f'id: {id}, tbl: {tbl}, col: {col}, data: {data[:2]}')
   print(f'filtered data: {p.num_filtered_ids()}')
   print(f'profiled data: {len(p.get_ids())}')
