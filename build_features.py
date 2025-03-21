@@ -46,6 +46,7 @@ if __name__ == "__main__":
   col_ids, table_f = table_featurizer.table_featurizer(wem, None).featurize(table_p, table_path, table_sep)
 
   ## write outputs
+  os.mkdir(op_dir)
   write_csv(os.path.join(op_dir, datalake + '-textids.list'), text_ids)
   write_csv(os.path.join(op_dir, datalake + '-colids.list'), col_ids)
   torch.save(text_f, os.path.join(op_dir, datalake + '-textfeatures.pt'))
