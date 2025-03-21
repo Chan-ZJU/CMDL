@@ -42,4 +42,7 @@ cd labeler
 jupyter nbconvert --to script snorkel_labeler.ipynb
 python snorkel_labeler.py
 
-## build up snorkel environment
+## run python file
+cd trainer
+jupyter nbconvert --to script column-text-joint-training.ipynb
+python column-text-joint-training.py
