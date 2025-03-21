@@ -73,4 +73,5 @@ def main(argv, feature_dir):
 
 if __name__ == "__main__":
   eval_results = main(sys.argv[1:], 'features')
+  print(eval_results)
 
