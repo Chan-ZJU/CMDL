@@ -26,3 +26,5 @@ dependencies:
     - datasets
     - transformers
     - pillow==9.0.0
+    - snorkel
+    - matplotlib
