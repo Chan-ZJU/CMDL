@@ -10,8 +10,8 @@ def read_ids(file_path):
     csvf = csv.reader(f, delimiter='\n')
     return [r[0] for r in csvf]
 
-def main(argv):
-  feature_dir = 'features'
+def main(argv, feature_dir):
+  feature_dir = feature_dir
   feature_tmp_dir = feature_dir
   datalake = 'mlopen'
   features_id = 0
@@ -72,5 +72,5 @@ def main(argv):
   return eval_results
 
 if __name__ == "__main__":
-  eval_results = main(sys.argv[1:])
+  eval_results = main(sys.argv[1:], 'features')
 
