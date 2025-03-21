@@ -76,7 +76,8 @@ if __name__ == "__main__":
 
   ## write results to label files
   column_labels_dir = 'column_labels'
-  os.mkdir(column_labels_dir)
+  if not os.path.exists(column_labels_dir):
+    os.mkdir(column_labels_dir)
   tblname_file = os.path.join(column_labels_dir, datalake + '-tblname.lbl')
   colname_file = os.path.join(column_labels_dir, datalake + '-colname.lbl')
   content_file = os.path.join(column_labels_dir, datalake + '-content.lbl')
